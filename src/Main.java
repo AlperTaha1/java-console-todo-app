@@ -10,7 +10,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         boolean working = true;
 
-        TaskRepository repository = new InMemoryTaskRepository();
+        TaskRepository repository = new MySQLTaskRepository();
         TaskService taskService = new TaskService(repository);
 
         while(working){
